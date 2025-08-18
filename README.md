@@ -2,10 +2,10 @@
 
 ## Description
 
-This is a template you can use to startup an admin dashboard project
+A modern and customizable Admin Dashboard Template built with [insert tech stack, e.g., React / HTML + Bootstrap / Tailwind].
+Includes responsive layouts, charts, tables, and UI components for easy integration into web projects.
 
 ## Features
-
 - React JS (CRA)
 - Redux Toolkit
 - Tailwind CSS
@@ -15,8 +15,5 @@ This is a template you can use to startup an admin dashboard project
 ## Getting Started
 
 First, run the development server:
-
-
-
 
 [Hosted on Vercel](https://modern-admin-dashboard-two.vercel.app/)
