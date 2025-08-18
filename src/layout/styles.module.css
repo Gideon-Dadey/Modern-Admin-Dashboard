@@ -1,0 +1,39 @@
+.navLink {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #596780;
+  padding-block: 14px;
+  padding-inline: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+  gap: 14px;
+  border-radius: 10px;
+}
+
+.navLink:hover {
+  background-color: #EBF2FF;
+}
+
+.activeNavLink {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  padding-block: 14px;
+  padding-inline: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: var(--primary);
+  font-family: var(--font-secondary);
+  gap: 14px;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.activeNavLink .navIcon path {
+  transition: stroke 0.3s;
+  fill: #fff !important;
+}

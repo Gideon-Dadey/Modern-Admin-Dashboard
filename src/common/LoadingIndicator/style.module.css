@@ -1,0 +1,34 @@
+.container {
+	z-index: 100;
+
+	/* opacity: 0.4; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+	margin-right: 10px;
+}
+
+.container>span {
+	color: #fff;
+}
+
+.loader {
+	border: 4px solid #f3f3f3;
+	border-top: 4px solid #042E4A;
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}

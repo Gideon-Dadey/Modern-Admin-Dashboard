@@ -1,0 +1,6 @@
+.auth-bg {
+  background-image: url(../assets/backgrounds/auth.svg), var(--pink, linear-gradient(180deg, #DC2626 0%, #DC2626 84.79%, #DC2626 100%));
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -207px 65vh, center;
+}

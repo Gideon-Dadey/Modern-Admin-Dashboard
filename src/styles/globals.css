@@ -1,0 +1,96 @@
+:root {
+	--primary: #fb6f92;
+	--secondary-dark: #ffffff;
+	--font-primary: 'Inter',
+		sans-serif;
+	--font-secondary: "Plus Jakarta Sans",
+		sans-serif;
+	--font-poppins: "Poppins",
+		sans-serif
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	overflow-x: hidden;
+	color: #000000;
+}
+
+/* Input styles */
+.inputContainer {
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	position: relative;
+}
+
+
+.inputContainer>label {
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: #292929;
+}
+
+.inputContainer>* input,
+textarea {
+	padding-block: 14px;
+	padding-inline: 17px;
+	font-size: 16px;
+	font-family: 'Inter', sans-serif;
+	border: 1px solid #B0B0B0;
+	border-radius: 4px;
+	width: 100%;
+	color: #000
+}
+
+.inputContainer>* input::placeholder,
+textarea::placeholder {
+	color: #CCCCCC;
+	font-family: 'Inter', sans-serif;
+}
+
+.inputError {
+	border: 1px solid #DC2626 !important;
+}
+
+.error {
+	color: #DC2626;
+	font-size: 0.75rem;
+}
+
+.errorText {
+	color: #DC2626 !important;
+}
+
+.line-clamp {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+/* Customized Scrollbar */
+.customized-scrollbar::-webkit-scrollbar {
+	width: 10px;
+	height: 5px;
+}
+
+/* Track */
+.customized-scrollbar::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+/* Handle */
+.customized-scrollbar::-webkit-scrollbar-thumb {
+	background: #ccc;
+}
+
+/* Handle on hover */
+.customized-scrollbar::-webkit-scrollbar-thumb:hover {
+	background: #999;
+}
