@@ -28,6 +28,7 @@ const LoginForm = () => {
       password: yup.string().required('Password is required'),
     }),
   });
+
   const submitValues = async () => {
     // try {
     //   setLoading(true);
@@ -53,15 +54,15 @@ const LoginForm = () => {
     return navigate('/dashboard');
   };
 
-   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-4">
-      <div className="bg-white dark:bg-gray-900 shadow-2xl rounded-3xl w-full max-w-md p-10">
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-4 sm:px-6 lg:px-8">
+      <div className="bg-white dark:bg-gray-900 shadow-2xl rounded-3xl w-full max-w-md p-6 sm:p-8 lg:p-10">
         {/* Heading */}
         <div className="text-center mb-8">
-          <h1 className="font-extrabold text-3xl md:text-4xl text-gray-900 dark:text-white font-poppins">
-            Hello Again 
+          <h1 className="font-extrabold text-2xl sm:text-3xl md:text-4xl text-gray-900 dark:text-white font-poppins">
+            Hello Again
           </h1>
-          <p className="mt-2 text-gray-600 dark:text-gray-400 text-base">
+          <p className="mt-2 text-gray-600 dark:text-gray-400 text-sm sm:text-base">
             Welcome back! Please enter your details
           </p>
         </div>
@@ -84,23 +85,23 @@ const LoginForm = () => {
           <Button
             type="submit"
             loading={loading}
-            className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 rounded-xl font-semibold text-lg hover:opacity-90 transition"
+            className="w-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-3 rounded-xl font-semibold text-base sm:text-lg shadow-md hover:opacity-90 transition disabled:opacity-60"
           >
-            Login
+            {loading ? "Signing in..." : "Login"}
           </Button>
 
           {/* Forgot password + link */}
-          <div className="flex justify-between items-center text-sm mt-4">
+          <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mt-4 text-sm">
             <Link
               to="/auth/forgot-password"
-              className="text-indigo-600 hover:underline"
+              className="text-indigo-600 hover:underline font-medium text-center sm:text-left"
             >
               Forgot password?
             </Link>
-            <p className="text-gray-500 dark:text-gray-400">
+            <p className="text-gray-500 dark:text-gray-400 text-center sm:text-left">
               Don’t have an account?{" "}
-              <Link to="/auth/register" className="text-indigo-600 hover:underline">
-             
+              <Link to="/auth/register" className="text-indigo-600 hover:underline font-medium">
+                Sign up
               </Link>
             </p>
           </div>
